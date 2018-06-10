@@ -8,7 +8,7 @@ The whole apporach is based on the holistic overview of this challenge through f
 docker-compose.yml --> Dockerfile (while confiuring docker and app) --> app.py --> Front-end
 docker-compose.yml --> conf.d folder(while configuring flaskapp)
 
-- The system needs to be configure with postgreSQL, nginx, flaskapp with right ports
+- The system needs to be configure with postgreSQL(port:5432), nginx(port:80), flaskapp(port:8080) with right ports
 - Database(PostgreSQL) needs to be configure
 - Initialize the database and process data migration before running the app
 - The quantity should be an integer only
@@ -24,7 +24,7 @@ docker-compose up --build
 
 To run:
 docker-compose up
-open the browser at localhose:8080
+open the browser at localhost:8080
 
 To remove:
 docker-compose down
