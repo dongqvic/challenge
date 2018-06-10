@@ -1,0 +1,34 @@
+<html lang="en">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<body>
+  <div class="container col-md-8 offset-md-2">
+    <br>
+    <h1>Welcome!</h1>
+    <h4>
+      Please enter items that you would like to sell?
+    </h4>
+    <form method="POST" action="/">
+      {{ form.csrf_token }}
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input class="form-control" type="text" name="name" placeholder="Enter a name" required>
+      </div>
+      <div class="form-group">
+        <label for="quantity">Quantity</label>
+        <input class="form-control" type="number" name="quantity" placeholder="Enter the quantity" required>
+      </div>
+      <div class="form-group">
+        <label for="quantity">Description</label>
+        <textarea class="form-control" cols="30" rows="10" placeholder="Enter the description" name="description" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">
+        Enter
+      </button>
+    </form>
+    <a href="/success" class="btn btn-warning text-white">
+      Table
+    </a>
+  </div>
+</body>
+
+</html>

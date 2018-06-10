@@ -1,0 +1,28 @@
+<html lang="en">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+<body>
+  <div class="container col-md-8 offset-md-2">
+    <h1>Thank you!</h1>
+    <h2>Here is the table</h2>
+    <div>
+      <table class="table">
+        <thead class="thead-light">
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">Description</th>
+          </tr>
+        </thead>
+        {% for d in data %}
+        <tr>
+          <td scope="row">{{d.name}}</td>
+          <td scope="row">{{d.quantity}}</td>
+          <td scope="row">{{d.description}}</td>
+        </tr>
+        {% endfor %}
+      </table>
+    </div>
+    <a href="/" class="btn btn-success">Home</a>
+  </div>
+</body>
+</html>
