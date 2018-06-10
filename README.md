@@ -4,12 +4,16 @@
 - Date: June 9th 2018
 
 # Problems and Research
-The whole apporach and problems are based the holistic overview of this challenge through files:
-docker-compose.yml --> conf.d folder --> Dockerfile --> app.py --> Front-end
+The whole apporach is based on the holistic overview of this challenge through files:
+docker-compose.yml --> Dockerfile (while confiuring docker and app) --> app.py --> Front-end
+docker-compose.yml --> conf.d folder(while configuring flaskapp)
+
 - The system needs to be configure with postgreSQL, nginx, flaskapp with right ports
 - Database(PostgreSQL) needs to be configure
+- Initialize the database and process data migration before running the app
 - The quantity should be an integer only
-- All class objects need to be converted to string/int which is compatible with html(index, table)
+- Only handles the form submit, process the form validation in POST request
+
 
 # Approaching Steps
 - Modify all files through the process above
