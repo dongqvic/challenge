@@ -1,7 +1,7 @@
 # Introduction
-Project deign credit to Insight Data Engineering
-Author: Qin Dong
-Date: June 9th 2018
+- Project 
+- Author: Qin Dong
+- Date: June 9th 2018
 
 # Problems and Research
 
