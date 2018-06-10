@@ -24,7 +24,17 @@ docker-compose up --build
 
 To run:
 docker-compose up
+open the browser at localhose:8080
 
 To remove:
 docker-compose down
+
+# Execution status
+Homepage shortcut
+![Image text](https://github.com/gelatoonny/challenge/blob/master/images/home.png)
+
+Table shortcut
+![Image text](https://github.com/gelatoonny/challenge/blob/master/images/table.png)
+
+
 
